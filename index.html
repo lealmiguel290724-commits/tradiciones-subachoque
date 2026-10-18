@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto escolar para reconocer, conservar y compartir las tradiciones culturales de Subachoque, Cundinamarca.">
+  <title>Subachoque: nuestras raíces, nuestra cultura</title>
+  <style>
+    :root{--green:#17452f;--green2:#2e6847;--cream:#fffaf0;--yellow:#ffd45b;--ink:#183126}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+    header{background:#fffdf7;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 5%;position:sticky;top:0;z-index:5;box-shadow:0 2px 12px #18312612}
+    .brand{font-size:1.2rem;font-weight:800;color:var(--green);line-height:1.2}
+    .brand small{display:block;font-size:.75rem;font-weight:500;color:#3d5146}
+    nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem}
+    nav a:hover{color:var(--green2);text-decoration:underline}
+    .hero{min-height:410px;display:flex;align-items:center;padding:55px 8%;color:white;background:linear-gradient(90deg,#092a1df2 0%,#092a1dc9 38%,#092a1d20 100%),url('subachoque-hero.png') center/cover}
+    .hero-content{max-width:590px}
+    .eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:.8rem;font-weight:bold;color:var(--yellow)}
+    h1{font-size:clamp(2.3rem,5vw,4.2rem);line-height:1.06;margin:10px 0 18px}
+    .hero p{font-size:1.12rem;max-width:540px}
+    .button{display:inline-block;background:var(--yellow);color:#1a2c20;padding:12px 20px;border-radius:28px;font-weight:800;text-decoration:none;border:0;cursor:pointer}
+    .button:hover{filter:brightness(.95);transform:translateY(-1px)}
+    section{padding:52px 6%;scroll-margin-top:80px}
+    .section-heading{text-align:center;margin:0 0 10px;font-size:clamp(1.7rem,3vw,2.5rem);color:var(--green)}
+    .section-intro{text-align:center;max-width:760px;margin:0 auto 30px;color:#4b5c51}
+    .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+    .card{background:white;border:1px solid #e8e6d9;border-radius:16px;padding:23px;box-shadow:0 7px 20px #203c2810}
+    .card .emoji{font-size:2rem}
+    .card h3{color:var(--green);margin:8px 0}
+    .soft{background:#f0f3e7}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+    .highlight{background:#fff;border-left:5px solid var(--yellow);padding:20px 24px;border-radius:8px}
+    .steps{padding-left:22px}
+    .steps li{padding:7px 0}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .gallery div{border-radius:12px;min-height:140px;padding:20px;display:flex;align-items:end;font-weight:bold;color:#fff;background:linear-gradient(0deg,#082719d9,transparent 85%),var(--green)}
+    .gallery div:nth-child(2){background:linear-gradient(0deg,#082719d9,transparent 85%),#9a6b36}
+    .gallery div:nth-child(3){background:linear-gradient(0deg,#082719d9,transparent 85%),#587b65}
+    .gallery div:nth-child(4){background:linear-gradient(0deg,#082719d9,transparent 85%),#b37e45}
+    .gallery div:nth-child(5){background:linear-gradient(0deg,#082719d9,transparent 85%),#8e8e5c}
+    .gallery div:nth-child(6){background:linear-gradient(0deg,#082719d9,transparent 85%),#426d83}
+    .notice{font-size:.9rem;color:#536156}
+    form{max-width:650px;margin:auto;display:grid;gap:12px}
+    input,textarea{width:100%;font:inherit;padding:12px;border:1px solid #c9d2c9;border-radius:9px;background:white}
+    footer{background:#103522;color:#fff;padding:30px 6%;text-align:center}
+    footer p{margin:5px}
+    @media(max-width:800px){header{align-items:flex-start;flex-direction:column}nav{gap:12px}.cards{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}}
+    @media(max-width:520px){.hero{padding:45px 6%;min-height:430px}.cards,.gallery{grid-template-columns:1fr}section{padding:40px 5%}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="brand">🌼 Subachoque <small>Nuestras raíces, nuestra cultura</small></div>
+  <nav aria-label="Navegación principal">
+    <a href="#inicio">Inicio</a><a href="#tradiciones">Tradiciones</a><a href="#gastronomia">Gastronomía</a>
+    <a href="#artesanias">Artesanías</a><a href="#galeria">Galería</a><a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <div class="eyebrow">Memoria · Identidad · Comunidad</div>
+      <h1>Nuestras raíces, nuestra cultura</h1>
+      <p>Un espacio escolar para descubrir, valorar y compartir las tradiciones culturales de Subachoque, Cundinamarca.</p>
+      <a class="button" href="#tradiciones">Explora nuestra cultura →</a>
+    </div>
+  </section>
+
+  <section id="tradiciones">
+    <h2 class="section-heading">Tradiciones que nos identifican</h2>
+    <p class="section-intro">Las tradiciones guardan recuerdos, conocimientos y formas de vivir que pasan de una generación a otra. Conocerlas ayuda a mantener viva la identidad de nuestra comunidad.</p>
+    <div class="cards">
+      <article class="card"><div class="emoji">🎉</div><h3>Fiestas y celebraciones</h3><p>Las reuniones comunitarias y las celebraciones locales son oportunidades para compartir, encontrarse y transmitir costumbres.</p></article>
+      <article class="card"><div class="emoji">🗣️</div><h3>Relatos y memoria oral</h3><p>Las historias de los mayores, las anécdotas y las leyendas permiten conocer cómo era el municipio y cómo ha cambiado.</p></article>
+      <article class="card"><div class="emoji">🌱</div><h3>Vida campesina</h3><p>Los saberes del campo, el trabajo con la tierra y el cuidado de la naturaleza hacen parte de la memoria de muchas familias.</p></article>
+    </div>
+  </section>
+
+  <section class="soft" id="gastronomia">
+    <div class="two-col">
+      <div>
+        <h2 class="section-heading" style="text-align:left">Sabores de nuestra tierra</h2>
+        <p>La gastronomía también es cultura. Las recetas familiares y los productos de la región cuentan historias sobre el territorio, el clima y las costumbres.</p>
+        <p class="notice">Esta sección se puede completar con entrevistas a habitantes y fotografías de preparaciones tradicionales de Subachoque.</p>
+      </div>
+      <div class="highlight"><h3>Pregunta para la comunidad</h3><p>¿Qué plato o receta recuerda tu familia y quién te enseñó a prepararlo?</p><p><strong>Idea para el proyecto:</strong> registrar la receta, su historia y una fotografía autorizada.</p></div>
+    </div>
+  </section>
+
+  <section id="artesanias">
+    <h2 class="section-heading">Saberes y oficios</h2>
+    <p class="section-intro">Las técnicas manuales, los oficios tradicionales y los conocimientos transmitidos en familia son parte del patrimonio cultural. Aquí podemos documentar los que los habitantes reconozcan como propios de la comunidad.</p>
+    <div class="cards">
+      <article class="card"><div class="emoji">🧶</div><h3>Creaciones manuales</h3><p>Registra objetos, materiales y técnicas artesanales presentes en la comunidad, indicando quién compartió la información.</p></article>
+      <article class="card"><div class="emoji">🌾</div><h3>Saberes del territorio</h3><p>Recoge conocimientos sobre las labores del campo, las plantas y las prácticas cotidianas, con respeto por sus portadores.</p></article>
+      <article class="card"><div class="emoji">👵🏽</div><h3>Voces de los mayores</h3><p>Las entrevistas permiten preservar recuerdos. Solicita permiso antes de publicar nombres, voces o fotografías.</p></article>
+    </div>
+  </section>
+
+  <section class="soft" id="galeria">
+    <h2 class="section-heading">Galería cultural</h2>
+    <p class="section-intro">Un lugar para publicar imágenes tomadas por el equipo del proyecto o compartidas con autorización.</p>
+    <div class="gallery">
+      <div>Celebraciones locales</div><div>Recetas familiares</div><div>Paisajes de Subachoque</div>
+      <div>Oficios y artesanías</div><div>Historias de la comunidad</div><div>Encuentros culturales</div>
+    </div>
+    <p class="notice">Nota: los recuadros son espacios de ejemplo. Reemplázalos por fotografías reales y verifica los datos antes de publicar.</p>
+  </section>
+
+  <section>
+    <h2 class="section-heading">¿Por qué conservar nuestras tradiciones?</h2>
+    <div class="two-col">
+      <div><p>Conservar las tradiciones fortalece la identidad, conecta a las generaciones y ayuda a que los conocimientos de la comunidad no se pierdan.</p><p>Esta página hace parte de un proyecto académico que busca usar herramientas digitales para divulgar y valorar la cultura local.</p></div>
+      <div class="highlight"><h3>¿Cómo puedes contribuir?</h3><ol class="steps"><li>Comparte una historia familiar.</li><li>Registra una tradición con permiso.</li><li>Verifica la información con sus protagonistas.</li><li>Ayuda a difundir la cultura con respeto.</li></ol></div>
+    </div>
+  </section>
+
+  <section class="soft" id="contacto">
+    <h2 class="section-heading">Comparte una historia</h2>
+    <p class="section-intro">Este formulario es una demostración para el proyecto escolar; todavía no envía información a ningún servidor.</p>
+    <form id="storyForm">
+      <label for="nombre">Nombre (opcional)</label><input id="nombre" name="nombre" placeholder="¿Cómo te llamas?">
+      <label for="historia">Tradición o recuerdo que quieres compartir</label><textarea id="historia" name="historia" rows="4" placeholder="Escribe aquí tu historia..." required></textarea>
+      <button class="button" type="submit">Mostrar mi aporte</button>
+      <p id="formMessage" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p><strong>Subachoque: nuestras raíces, nuestra cultura</strong></p>
+  <p>Proyecto académico de grado 11 · Conservación y divulgación cultural</p>
+  <p>Subachoque, Cundinamarca, Colombia</p>
+</footer>
+<script>
+  document.getElementById('storyForm').addEventListener('submit', function(event){
+    event.preventDefault();
+    const name = document.getElementById('nombre').value.trim();
+    const story = document.getElementById('historia').value.trim();
+    document.getElementById('formMessage').textContent =
+      (name ? 'Gracias, ' + name + '. ' : '¡Gracias por participar! ') +
+      'Tu aporte quedó visible en esta demostración: “' + story + '”. Para guardar aportes de verdad, la página necesitaría conectarse a un servicio.';
+  });
+</script>
+</body>
+</html>
